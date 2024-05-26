@@ -7,6 +7,8 @@ For example if you enter anything random in the email section it will tell you t
 
 ![image](https://github.com/omg775/LoginForm/assets/113525658/3922bf0e-9e96-4b17-a678-7f3bb87efd97)
 
+![image](https://github.com/omg775/LoginForm/assets/113525658/b524db34-340d-45ac-9e9f-c1e1c9e5f152)
+
 ![image](https://github.com/omg775/LoginForm/assets/113525658/ba88da6e-6969-4966-8581-edbee4fae4f2)
 
 ![image](https://github.com/omg775/LoginForm/assets/113525658/0b1d4ad1-a56f-4fc8-8f88-18dc2195e1f9)

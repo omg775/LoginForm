@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Project14</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.0/css/bulma.min.css">
+    <link rel="stylesheet" type="text/css" href="Content/Project14.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <style>
+        /* Don't show the not-yet-loaded templates */
+        [ws-template], [ws-children-template] {
+            display: none;
+        }
+
+        /* Custom styles for input fields */
+        .input.is-large {
+            font-size: 1.25em; /* Adjust font size */
+            padding: 1.5em; /* Adjust padding */
+            width: 100%; /* Ensure the input fields take full width of the container */
+            box-sizing: border-box; /* Include padding and border in the element's total width and height */
+            border: 2px solid #000; /* Darker border color */
+        }
+
+        .input-container {
+            margin-bottom: 1.5em; /* Adjust spacing between fields */
+        }
+
+        /* Rounded corners for box */
+        .box {
+            border-radius: 20px; /* Curved corners */
+        }
+
+        /* Existing styles */
+        .hero.is-success {
+            background: #fff;
+            background-image: url("123.jpg");
+        }
+
+        .logo {
+            height: 70px;
+            width: 70px;
+            border-radius: 100%;
+            overflow: hidden;
+            filter: drop-shadow(2px 4px 6px black);
+        }
+
+            .logo img {
+                max-width: 100%;
+                max-height: 100%;
+            }
+    </style>
+    <script type="text/javascript" src="Content/Project14.head.js"></script>
+</head>
+<body>
+    <header class="header"></header>
+
+    <div id="main" ws-children-template="Main">
+        <section class="hero is-success is-fullheight">
+            <div class="hero-body">
+                <div class="container has-text-centered">
+                    <div class="column is-4 is-offset-4">
+                        <img class="logo" src="ben.jpg" />
+                        <h3 class="title has-text-black">SignIn</h3>
+                        <p class="subtitle has-text-black">Please SignIn to access my Linkedin Profile.</p>
+                        <div class="box is-rounded">
+                            <!-- Curved box -->
+                            <form>
+                                <div class="field input-container">
+                                    <div class="control">
+                                        <input ws-var="FirstName" ws-attr="AttrFirstName" type="text" placeholder="FirstName" class="input is-large">
+                                    </div>
+                                </div>
+                                <div class="field input-container">
+                                    <div class="control">
+                                        <input ws-var="LastName" ws-attr="AttrLastName" type="text" placeholder="LastName" class="input is-large">
+                                    </div>
+                                </div>
+                                <div class="field input-container">
+                                    <div class="control">
+                                        <input ws-var="Email" ws-attr="AttrEmail" type="email" placeholder="Your Email" class="input is-large" autofocus>
+                                    </div>
+                                </div>
+                                <div class="field input-container">
+                                    <div class="control">
+                                        <input ws-var="Password" ws-attr="AttrPassword" type="password" placeholder="Your Password" class="input is-large">
+                                    </div>
+                                </div>
+
+                                <div class="field">
+                                    <label class="checkbox">
+                                        <input ws-var="RememberMe" type="checkbox">
+                                        Remember me
+                                    </label>
+                                </div>
+                            </form>
+                            <button ws-onclick="Click" class="button is-block is-info is-large is-fullwidth is-rounded">SignIn</button> <!-- Curved sign-in button -->
+                        </div>
+                        <p class="has-text-red">
+                            <a href="#">Need Help?</a>
+                        </p>
+                        <p class="has-text-red">
+                            Already have an account? <a href="signup.html">Login</a>.
+                        </p>
+                        <p class="has-text-red">
+                            <a href="https://www.instagram.com/o_my_gawde/" target="_blank">
+                                <i class="fa fa-instagram"></i> Contact me on Instagram
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+  
+    <script type="text/javascript" src="Content/Project14.min.js"></script>
+</body>
+</html>
